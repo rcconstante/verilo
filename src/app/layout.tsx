@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
+import { PreviewCredit } from "@/components/preview-credit";
 const body = Inter({
   subsets: ["latin"],
   variable: "--font-body",
@@ -22,7 +23,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${body.variable} ${display.variable}`}>{children}</body>
+      <body className={`${body.variable} ${display.variable}`}>
+        {children}
+        <PreviewCredit
+          theme="verilo"
+          sourceHref="https://dribbble.com/shots/27746115-AI-Content-Detector-Website-AI-Detection-SaaS-AI-SaaS"
+        />
+      </body>
     </html>
   );
 }
