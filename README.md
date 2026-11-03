@@ -2,6 +2,8 @@
 
 A complete responsive product landing page built with Next.js App Router, TypeScript, Inter/Inter Tight, Radix UI Accordion and Dialog, and Lucide icons.
 
+![Verilo homepage hero](docs/hero-preview.webp)
+
 ## Run
 
 ```powershell
